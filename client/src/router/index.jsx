@@ -13,6 +13,7 @@ import PrivateRoute from './PrivateRoute'
 import DashHome from '../pages/Dashboard/DashHome'
 import DevDashboard from '../layouts/DevDashboard'
 import DevHome from '../pages/DevDashboard/DevHome'
+import HomePage from '../pages/HomePage/HomePage'
 
 function App() {
     return (
@@ -20,7 +21,8 @@ function App() {
             <Routes>
                 <Route path='/' element={<WebSite />} >
                     <Route path='*' element={<DefultError />} />
-                    <Route index element={<Login />} />
+                    <Route index element={<HomePage />} />
+                    <Route path='login' element={<Login /> } />
                     <Route path='create-account' element={<CreateAccount />} />
                     <Route path='forget-password' element={<ForgetPassword />} />
                     <Route path='verify-account' element={<VerifyEmail />} />
