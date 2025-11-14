@@ -45,7 +45,7 @@ export default function Nav() {
     };
 
     return (
-        <div className="w-full bg-gradient-to-r from-pink-500 via-pink-400 to-pink-500 text-white shadow-xl sticky top-0 z-50 backdrop-blur-lg border-b border-white/10">
+        <div className="w-full bg-gradient-to-r from-pink-500 via-pink-400 to-pink-500 text-white shadow sticky top-0 z-50 backdrop-blur-lg border-b border-white/10">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
                 {/* Logo */}
@@ -71,7 +71,7 @@ export default function Nav() {
                         </button>
 
                         {drop && (
-                            <div className="absolute left-0 mt-3 bg-white text-gray-700 w-72 rounded-2xl shadow-2xl border border-pink-200 py-4 animate-fadeIn backdrop-blur-xl z-50">
+                            <div className="absolute left-0 mt-3 bg-white text-gray-700 w-72 rounded-2xl shadow border border-pink-200 py-4 animate-fadeIn backdrop-blur-xl z-50">
                                 {categories.map((cat, i) => (
                                     <div key={i} className="relative">
 
@@ -96,7 +96,7 @@ export default function Nav() {
 
                                         {/* Mega Menu */}
                                         {!cat.link && mega === cat.name && megaMenu[cat.name] && (
-                                            <div className="absolute top-0 left-72 w-64 bg-white rounded-xl shadow-xl border border-pink-200 py-4 px-3 animate-fadeIn">
+                                            <div className="absolute top-0 left-72 w-64 bg-white rounded-xl shadow border border-pink-200 py-4 px-3 animate-fadeIn">
                                                 {megaMenu[cat.name].map((sub, s) => (
                                                     <a
                                                         key={s}
